@@ -1,0 +1,43 @@
+{
+  "ucp": {
+    "version": "2026-08-25",
+    "capabilities": {
+      "dev.ucp.shopping.catalog.search": [
+        {
+          "version": "2026-08-25",
+          "spec": "https://ucp.dev/2026-08-25/specification/catalog/search",
+          "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json"
+        }
+      ],
+      "dev.ucp.shopping.catalog.lookup": [
+        {
+          "version": "2026-08-25",
+          "spec": "https://ucp.dev/2026-08-25/specification/catalog/lookup",
+          "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json"
+        }
+      ],
+      "dev.shopify.catalog.global": [
+        {
+          "version": "2026-08-25",
+          "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+          "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+          "extends": [
+            "dev.ucp.shopping.catalog.search",
+            "dev.ucp.shopping.catalog.lookup"
+          ]
+        }
+      ]
+    }
+  },
+  "keys": [
+    {
+      "kty": "EC",
+      "x": "uf7JG2PHP_9A6v_WKn6LNZ8CmAwCnbIrwJ0fbFr0zm4",
+      "y": "8kapVE6iRFOaVQ5-jkbkYwFqA8ldaRV4-0yCZHPTFg0",
+      "crv": "P-256",
+      "kid": "shopping-2026-11",
+      "use": "sig",
+      "alg": "ES256"
+    }
+  ]
+}
